@@ -3,136 +3,361 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Neuron Motion — belajar sistem saraf dan gerak manusia secara interaktif.">
-  <title>Neuron Motion</title>
+  <meta name="description" content="Neuron Motion — belajar sistem saraf dan gerak pada manusia: delapan materi singkat dan kuis.">
+  <title>Sistem Saraf dan Gerak pada Manusia — Neuron Motion</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <a class="brand" href="#beranda" aria-label="Neuron Motion beranda">
-      <span class="brand-mark">N<span>.</span></span>
-      <span>neuron<span class="brand-light">motion</span></span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
-    <nav id="navMenu">
-      <a href="#beranda" class="nav-link active">Beranda</a>
-      <a href="#materi" class="nav-link">Materi</a>
-      <a href="#kuis" class="nav-link">Kuis</a>
+
+  <header class="topbar">
+    <a class="wordmark" href="#beranda">Neuron Motion</a>
+    <nav class="topnav" aria-label="Navigasi utama">
+      <a href="#beranda" data-nav="beranda">Beranda</a>
+      <a href="#materi" data-nav="materi">Materi</a>
+      <a href="#kuis" data-nav="kuis">Kuis</a>
     </nav>
-    <a class="nav-cta" href="#kuis">Uji Pemahaman <span>↗</span></a>
   </header>
 
-  <main>
-    <section class="hero section-wrap" id="beranda">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-dot"></span> IPAS · SISTEM SARAF & GERAK</div>
-        <h1>Kenali tubuhmu.<br><span>Pahami setiap gerak.</span></h1>
-        <p class="hero-description">Jelajahi bagaimana otak, saraf, tulang, dan otot bekerja sama membuat tubuhmu bergerak.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#materi">Jelajahi Materi <span>→</span></a>
-          <a class="button button-secondary" href="#kuis">Mulai Kuis <span>↗</span></a>
-        </div>
-        
-      </div>
-      <div class="hero-visual">
-        <img class="Gambar-manusia" src="https://ghost-blog-assets.zenius.net/wordpress/2022/05/Bagian-bagian-sistem-saraf-manusia.png" alt="Ilustrasi sistem saraf manusia">
-      </div>
-      <div class="hero-bottom"><span>01 / EXPLORE THE HUMAN BODY</span><span>SCROLL TO DISCOVER ↓</span></div>
-    </section>
+  <main id="main">
 
-    <section class="intro-strip">
-      <div><span class="strip-number">01</span><span>Kenali sistem tubuh</span></div>
-      <div><span class="strip-number">02</span><span>Pahami cara kerja</span></div>
-      <div><span class="strip-number">03</span><span>Uji pengetahuanmu</span></div>
-    </section>
-
-    <section class="materials section-wrap" id="materi">
-      <div class="section-heading">
-        <div><div class="eyebrow"><span class="eyebrow-dot"></span> RINGKASAN MATERI</div><h2>Tubuh manusia,<br><span>sebuah sistem luar biasa.</span></h2></div>
-        <p>Setiap bagian memiliki peran. Ketika semuanya bekerja bersama, tubuh dapat merespons dan bergerak.</p>
-      </div>
-      <div class="material-grid">
-        <article class="material-card card-nervous">
-          <div class="card-top"><span class="card-index">01</span><span class="card-icon">⌁</span></div>
-          <div class="card-category">CONTROL CENTER</div>
-          <h3>Sistem Saraf<br>Manusia</h3>
-          <p>Menerima rangsang, mengolah informasi, dan mengatur respons tubuh.</p>
-          <ul class="feature-list">
-            <li><span class="list-bullet"></span><div><strong>Otak</strong><small>Pusat koordinasi dan pemrosesan informasi.</small></div></li>
-            <li><span class="list-bullet"></span><div><strong>Sumsum tulang belakang</strong><small>Jalur impuls dan pengendali gerak refleks.</small></div></li>
-            <li><span class="list-bullet"></span><div><strong>Saraf tepi</strong><small>Menghubungkan pusat saraf dengan organ tubuh.</small></div></li>
-          </ul>
-        </article>
-
-        <article class="material-card card-movement">
-          <div class="card-top"><span class="card-index">02</span><span class="card-icon">↗</span></div>
-          <div class="card-category">MOVEMENT SYSTEM</div>
-          <h3>Sistem Gerak<br>Manusia</h3>
-          <p>Sistem yang memungkinkan tubuh berdiri, berpindah, dan melakukan aktivitas.</p>
-          <ul class="feature-list">
-            <li><span class="list-bullet"></span><div><strong>Tulang</strong><small>Menopang postur dan melindungi organ vital.</small></div></li>
-            <li><span class="list-bullet"></span><div><strong>Sendi</strong><small>Menghubungkan tulang dan memungkinkan gerak.</small></div></li>
-            <li><span class="list-bullet"></span><div><strong>Otot</strong><small>Alat gerak aktif melalui kontraksi dan relaksasi.</small></div></li>
-          </ul>
-        </article>
-
-        <article class="material-card card-connection">
-          <div class="card-top"><span class="card-index">03</span><span class="card-icon">⌘</span></div>
-          <div class="card-category">NEURAL CONNECTION</div>
-          <h3>Saraf &<br>Gerak</h3>
-          <p>Sistem saraf mengirim instruksi agar otot menghasilkan gerakan.</p>
-          <div class="flow-box">
-            <span>Rangsangan</span><i>→</i><span>Reseptor</span><i>→</i><span>Jalur saraf</span><i>→</i><span>Otak</span><i>→</i><span>Otot (efektor)</span>
-          </div>
-          <div class="reflex-note"><span>⚡</span><div><strong>Gerak refleks</strong><small>Respons cepat melalui sumsum tulang belakang tanpa menunggu pemrosesan sadar oleh otak.</small></div></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="quiz-section" id="kuis">
-      <div class="quiz-wrap">
-        <div class="quiz-heading">
-          <div class="eyebrow"><span class="eyebrow-dot"></span> KNOWLEDGE CHECK</div>
-          <h2>Sudah siap<br><span>menguji dirimu?</span></h2>
-          <p>Jawab beberapa pertanyaan singkat dan lihat seberapa jauh kamu memahami sistem saraf dan gerak.</p>
-        </div>
-        <div class="quiz-panel" id="quizPanel">
-          <div class="quiz-start" id="quizStart">
-            <div class="quiz-symbol">✳</div>
-            <div class="quiz-meta"><span>IPAS · KUIS</span><span>5 PERTANYAAN</span></div>
-            <h3>Tantang pengetahuanmu.</h3>
-            <p>Pilih jawaban yang paling tepat. Setiap soal akan langsung memberikan umpan balik.</p>
-            <button class="button button-primary full-button" id="startQuiz">Mulai Kuis <span>→</span></button>
-          </div>
-          <div class="quiz-content hidden" id="quizContent">
-            <div class="quiz-meta"><span id="questionCount">PERTANYAAN 01 / 05</span><span id="scoreLabel">SKOR: 0</span></div>
-            <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
-            <h3 id="questionText"></h3>
-            <div class="answer-list" id="answerList"></div>
-            <div class="feedback hidden" id="feedback" role="status"></div>
-            <button class="button button-primary full-button hidden" id="nextQuestion">Soal Berikutnya <span>→</span></button>
-          </div>
-          <div class="quiz-result hidden" id="quizResult">
-            <div class="result-icon" id="resultIcon">✦</div>
-            <div class="quiz-meta"><span>HASIL KUIS</span><span>NEURON MOTION</span></div>
-            <h3 id="resultTitle">Keren!</h3>
-            <div class="score-display"><strong id="finalScore">0</strong><span>/ 5 benar</span></div>
-            <p id="resultMessage"></p>
-            <button class="button button-primary full-button" id="retryQuiz">Coba Lagi <span>↻</span></button>
-          </div>
+    <!-- ============ BERANDA ============ -->
+    <section class="view home" id="view-beranda" aria-label="Beranda">
+      <div class="home-text">
+        <p class="label">IPAS · Bab Sistem Saraf dan Gerak</p>
+        <h1>SISTEM SARAF DAN GERAK PADA MANUSIA</h1>
+        <p class="home-lead">Otak memberi perintah, saraf menghantarkannya, otot menarik tulang. Delapan materi singkat menjelaskan bagaimana rantai itu bekerja, satu topik untuk satu layar.</p>
+        <div class="home-actions">
+          <a class="btn btn-solid" href="#materi/saraf">Mulai belajar</a>
+          <a class="btn btn-line" href="#kuis">Langsung ke kuis</a>
         </div>
       </div>
+
+      <div class="home-figures">
+        <figure class="plate">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nervous_system_diagram-en.svg?width=700" alt="Diagram sistem saraf manusia: otak, sumsum tulang belakang, dan saraf yang bercabang ke seluruh tubuh">
+          <figcaption><span>Gambar A</span> Sistem saraf</figcaption>
+        </figure>
+        <figure class="plate">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Human_skeleton_front_en.svg?width=500" alt="Rangka manusia tampak depan dengan label tulang">
+          <figcaption><span>Gambar B</span> Rangka</figcaption>
+        </figure>
+      </div>
+
+      <p class="home-credit">Disusun oleh Arki Ahmad Fabian.</p>
     </section>
+
+    <!-- ============ MATERI ============ -->
+    <section class="view materi" id="view-materi" aria-label="Materi">
+      <aside class="rail" aria-label="Daftar materi">
+        <p class="label">Daftar materi</p>
+        <div id="railList"></div>
+      </aside>
+
+      <div class="stage">
+        <div class="stage-body" id="stageBody">
+
+          <!-- 01 -->
+          <article class="topic" id="topic-saraf" data-id="saraf" data-title="Gambaran Sistem Saraf" data-group="Sistem saraf" tabindex="-1">
+            <header class="topic-head">
+              <p class="label topic-meta"><span class="topic-count"></span> · Sistem saraf</p>
+              <h2>Gambaran sistem saraf</h2>
+            </header>
+            <div class="topic-grid">
+              <div class="topic-text">
+                <p class="lead">Sistem saraf adalah jaringan sel saraf (neuron) yang menerima rangsangan dari dalam dan luar tubuh, mengolahnya, lalu menyampaikan perintah ke otot dan kelenjar.</p>
+                <dl class="spec">
+                  <div><dt>Sensorik</dt><dd>Mengumpulkan informasi dari reseptor, misalnya kulit, mata, dan telinga.</dd></div>
+                  <div><dt>Integrasi</dt><dd>Mengolah informasi di otak dan sumsum tulang belakang.</dd></div>
+                  <div><dt>Motorik</dt><dd>Mengirim perintah ke efektor: otot dan kelenjar.</dd></div>
+                </dl>
+                <p class="note">Otak dilindungi tengkorak dan selaput otak (meninges); sumsum tulang belakang dilindungi ruas-ruas tulang belakang.</p>
+              </div>
+              <div class="topic-side">
+                <p class="label">Pembagian sistem saraf</p>
+                <ul class="tree">
+                  <li><strong>Sistem saraf</strong>
+                    <ul>
+                      <li><strong>Sistem saraf pusat</strong><span>pengolah utama</span>
+                        <ul>
+                          <li>Otak</li>
+                          <li>Sumsum tulang belakang</li>
+                        </ul>
+                      </li>
+                      <li><strong>Sistem saraf tepi</strong><span>penghubung ke tubuh</span>
+                        <ul>
+                          <li>Somatik <span>terkendali sadar</span></li>
+                          <li>Otonom <span>tidak disadari</span>
+                            <ul>
+                              <li>Simpatik</li>
+                              <li>Parasimpatik</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="topic" id="topic-neuron" data-id="neuron" data-title="Neuron" data-group="Sistem saraf" tabindex="-1">
+            <header class="topic-head">
+              <p class="label topic-meta"><span class="topic-count"></span> · Sistem saraf</p>
+              <h2>Neuron</h2>
+            </header>
+            <div class="topic-grid">
+              <div class="topic-text">
+                <p class="lead">Neuron adalah unit struktural dan fungsional sistem saraf. Diperkirakan otak manusia memiliki sekitar 100 miliar neuron.</p>
+                <dl class="spec">
+                  <div><dt>Badan sel</dt><dd>Berisi inti sel; pusat kegiatan hidup neuron.</dd></div>
+                  <div><dt>Dendrit</dt><dd>Cabang pendek yang menerima impuls menuju badan sel.</dd></div>
+                  <div><dt>Akson</dt><dd>Serabut panjang yang membawa impuls menjauhi badan sel.</dd></div>
+                  <div><dt>Selubung mielin</dt><dd>Pembungkus akson yang mempercepat hantaran impuls.</dd></div>
+                  <div><dt>Sinapsis</dt><dd>Celah pertemuan ujung akson dengan sel berikutnya.</dd></div>
+                </dl>
+                <p class="label sub-label">Tiga jenis neuron menurut fungsi</p>
+                <ul class="chips">
+                  <li><b>Sensorik</b> reseptor → pusat saraf</li>
+                  <li><b>Asosiasi</b> penghubung di pusat saraf</li>
+                  <li><b>Motorik</b> pusat saraf → efektor</li>
+                </ul>
+              </div>
+              <figure class="plate topic-fig">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Blausen_0657_MultipolarNeuron.png?width=900" alt="Ilustrasi neuron multipolar dengan badan sel, dendrit, akson, dan selubung mielin" loading="lazy">
+                <figcaption><span>Gambar</span> Neuron multipolar: satu akson dan banyak dendrit. <em>Blausen Medical / Bruce Blaus, CC BY.</em></figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article class="topic" id="topic-otak" data-id="otak" data-title="Otak" data-group="Sistem saraf" tabindex="-1">
+            <header class="topic-head">
+              <p class="label topic-meta"><span class="topic-count"></span> · Sistem saraf</p>
+              <h2>Otak</h2>
+            </header>
+            <div class="topic-grid">
+              <div class="topic-text">
+                <p class="lead">Otak adalah pusat kendali tubuh: mengatur gerakan, pikiran, emosi, ingatan, dan kerja organ. Beratnya sekitar 1,3–1,5 kg, terlindung oleh tengkorak, meninges, dan cairan serebrospinal.</p>
+                <dl class="spec">
+                  <div><dt>Otak besar <small>cerebrum</small></dt><dd>Bagian terbesar, terdiri atas dua belahan. Pusat berpikir, ingatan, kesadaran, pengolahan indra, dan gerak sadar.</dd></div>
+                  <div><dt>Otak kecil <small>cerebellum</small></dt><dd>Mengoordinasikan gerak otot, menjaga postur dan keseimbangan.</dd></div>
+                  <div><dt>Batang otak</dt><dd>Otak tengah, pons, dan medula oblongata. Mengatur fungsi vital seperti napas dan detak jantung, serta menghubungkan otak dengan sumsum tulang belakang.</dd></div>
+                </dl>
+                <p class="label sub-label">Empat lobus otak besar</p>
+                <ul class="chips">
+                  <li><b>Frontal</b> berpikir, rencana, gerak sadar</li>
+                  <li><b>Parietal</b> sentuhan dan posisi tubuh</li>
+                  <li><b>Temporal</b> pendengaran dan memori</li>
+                  <li><b>Oksipital</b> penglihatan</li>
+                </ul>
+              </div>
+              <figure class="plate topic-fig">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Human_brain_lateral_view_description.JPG?width=700" alt="Otak manusia tampak samping dengan lobus frontal, parietal, temporal, dan oksipital berlabel" loading="lazy">
+                <figcaption><span>Gambar</span> Otak manusia tampak samping; label lobus memakai istilah Latin. <em>John A. Beal, LSU Health Shreveport, CC BY 2.5.</em></figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article class="topic" id="topic-sumsum" data-id="sumsum" data-title="Sumsum Tulang Belakang dan Saraf Tepi" data-group="Sistem saraf" tabindex="-1">
+            <header class="topic-head">
+              <p class="label topic-meta"><span class="topic-count"></span> · Sistem saraf</p>
+              <h2>Sumsum tulang belakang dan saraf tepi</h2>
+            </header>
+            <div class="topic-grid">
+              <div class="topic-text">
+                <p class="lead">Sumsum tulang belakang menyambung dari batang otak dan memanjang di dalam rongga tulang belakang sampai sekitar ruas pinggang kedua. Dari sinilah saraf bercabang ke seluruh tubuh.</p>
+                <dl class="spec">
+                  <div><dt>Susunan</dt><dd>Materi kelabu di bagian dalam (badan sel saraf), materi putih di luar (serabut saraf).</dd></div>
+                  <div><dt>Fungsi</dt><dd>Jalur impuls dua arah antara tubuh dan otak, sekaligus pusat gerak refleks.</dd></div>
+                  <div><dt>Saraf tepi</dt><dd>12 pasang saraf kranial dari otak dan 31 pasang saraf spinal dari sumsum tulang belakang.</dd></div>
+                  <div><dt>Somatik</dt><dd>Menggerakkan otot rangka; dapat dikendalikan secara sadar.</dd></div>
+                  <div><dt>Otonom</dt><dd>Mengatur jantung, pencernaan, dan kelenjar tanpa disadari. Simpatik menyiagakan tubuh, parasimpatik menenangkannya.</dd></div>
+                </dl>
+              </div>
+              <figure class="plate topic-fig">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nervous_system_diagram-en.svg?width=700" alt="Diagram sistem saraf: otak, sumsum tulang belakang, dan saraf tepi" loading="lazy">
+                <figcaption><span>Gambar</span> Otak dan sumsum tulang belakang (pusat), serta saraf yang bercabang ke tubuh (tepi). <em>Medium69 dan Jmarchn, Wikimedia Commons.</em></figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <!-- 05 -->
+          <article class="topic" id="topic-refleks" data-id="refleks" data-title="Gerak Refleks" data-group="Sistem saraf" tabindex="-1">
+            <header class="topic-head">
+              <p class="label topic-meta"><span class="topic-count"></span> · Sistem saraf dan gerak</p>
+              <h2>Gerak refleks</h2>
+            </header>
+            <div class="topic-grid">
+              <div class="topic-text">
+                <p class="lead">Gerak refleks adalah respons cepat yang tidak disadari. Impuls tidak menunggu otak: dari neuron sensorik, sumsum tulang belakang langsung meneruskannya ke neuron motorik.</p>
+                <div class="routes">
+                  <p class="label">Gerak sadar</p>
+                  <ol class="route">
+                    <li>Rangsang</li><li>Reseptor</li><li>Neuron sensorik</li><li class="hl">Otak</li><li>Neuron motorik</li><li>Otot</li>
+                  </ol>
+                  <p class="label">Gerak refleks</p>
+                  <ol class="route route-reflex">
+                    <li>Rangsang</li><li>Reseptor</li><li>Neuron sensorik</li><li class="hl">Sumsum tulang belakang</li><li>Neuron motorik</li><li>Otot</li>
+                  </ol>
+                </div>
+                <dl class="spec">
+                  <div><dt>Contoh</dt><dd>Refleks lutut saat tendon di bawah tempurung lutut diketuk, menarik tangan dari benda panas, dan berkedip.</dd></div>
+                  <div><dt>Otak</dt><dd>Tetap menerima informasinya, tetapi setelah respons terjadi.</dd></div>
+                </dl>
+              </div>
+              <figure class="plate topic-fig">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Patellar_tendon_reflex_arc.png" alt="Skema lengkung refleks lutut (refleks tendon patela)" loading="lazy">
+                <figcaption><span>Gambar</span> Skema refleks lutut. Neuron penghambat (biru) membuat otot antagonis di belakang paha mengendur. <em>Wikimedia Commons.</em></figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <!-- 06 -->
+          <article class="topic topic-move" id="topic-tulang" data-id="tulang" data-title="Tulang" data-group="Sistem gerak" tabindex="-1">
+            <header class="topic-head">
+              <p class="label topic-meta"><span class="topic-count"></span> · Sistem gerak</p>
+              <h2>Tulang</h2>
+            </header>
+            <div class="topic-grid">
+              <div class="topic-text">
+                <p class="lead">Tulang adalah alat gerak pasif: ia baru bergerak ketika ditarik otot. Rangka manusia dewasa tersusun dari 206 tulang.</p>
+                <dl class="spec">
+                  <div><dt>Penopang</dt><dd>Membentuk dan menegakkan tubuh.</dd></div>
+                  <div><dt>Pelindung</dt><dd>Tengkorak melindungi otak; tulang rusuk melindungi jantung dan paru-paru.</dd></div>
+                  <div><dt>Perlekatan</dt><dd>Tempat melekatnya otot.</dd></div>
+                  <div><dt>Produksi darah</dt><dd>Sel darah dibentuk di sumsum tulang.</dd></div>
+                  <div><dt>Cadangan</dt><dd>Menyimpan mineral, terutama kalsium.</dd></div>
+                </dl>
+                <p class="label sub-label">Jenis dan pembagian</p>
+                <ul class="chips">
+                  <li><b>Tulang rawan</b> lentur, ujung sendi, telinga, hidung</li>
+                  <li><b>Tulang keras</b> kuat, mengandung kalsium</li>
+                  <li><b>Rangka</b> tengkorak, badan, anggota gerak</li>
+                </ul>
+              </div>
+              <figure class="plate topic-fig fig-tall">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Human_skeleton_front_en.svg?width=500" alt="Rangka manusia tampak depan dengan nama-nama tulang" loading="lazy">
+                <figcaption><span>Gambar</span> Rangka manusia tampak depan. <em>Wikimedia Commons.</em></figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <!-- 07 -->
+          <article class="topic topic-move" id="topic-sendi" data-id="sendi" data-title="Sendi" data-group="Sistem gerak" tabindex="-1">
+            <header class="topic-head">
+              <p class="label topic-meta"><span class="topic-count"></span> · Sistem gerak</p>
+              <h2>Sendi</h2>
+            </header>
+            <div class="topic-grid">
+              <div class="topic-text">
+                <p class="lead">Sendi adalah hubungan antara dua tulang atau lebih. Sendi membuat gerak mungkin, sambil menjaga tulang tetap terhubung.</p>
+                <dl class="spec">
+                  <div><dt>Sinartrosis</dt><dd>Sendi mati, tidak dapat digerakkan. Contoh: sambungan tulang tengkorak.</dd></div>
+                  <div><dt>Amfiartrosis</dt><dd>Sendi kaku, gerak terbatas. Contoh: ruas tulang belakang.</dd></div>
+                  <div><dt>Diartrosis</dt><dd>Sendi gerak, dapat bergerak bebas.</dd></div>
+                </dl>
+                <p class="label sub-label">Jenis sendi gerak</p>
+                <ul class="chips">
+                  <li><b>Peluru</b> segala arah: bahu, panggul</li>
+                  <li><b>Engsel</b> satu arah: siku, lutut</li>
+                  <li><b>Putar</b> rotasi: leher, lengan bawah</li>
+                  <li><b>Pelana</b> dua arah: pangkal ibu jari</li>
+                  <li><b>Luncur</b> bergeser: pergelangan tangan dan kaki</li>
+                </ul>
+                <p class="note">Ligamen mengikat tulang dengan tulang; tendon mengikat otot dengan tulang.</p>
+              </div>
+              <figure class="plate topic-fig">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/909_Types_of_Synovial_Joints.jpg?width=900" alt="Enam jenis sendi sinovial: putar, engsel, kondiloid, pelana, luncur, dan peluru" loading="lazy">
+                <figcaption><span>Gambar</span> Enam jenis sendi sinovial; sendi kondiloid (pergelangan tangan) ditambahkan di buku teks lanjutan. <em>OpenStax College, CC BY 3.0.</em></figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <!-- 08 -->
+          <article class="topic topic-move" id="topic-otot" data-id="otot" data-title="Otot" data-group="Sistem gerak" tabindex="-1">
+            <header class="topic-head">
+              <p class="label topic-meta"><span class="topic-count"></span> · Sistem gerak</p>
+              <h2>Otot</h2>
+            </header>
+            <div class="topic-grid">
+              <div class="topic-text">
+                <p class="lead">Otot adalah alat gerak aktif. Ia dapat memendek (kontraksi) lalu memanjang kembali (relaksasi), sehingga menarik tulang melalui tendon.</p>
+                <dl class="spec">
+                  <div><dt>Otot rangka</dt><dd>Melekat pada tulang, bergaris lurik, dapat dikendalikan secara sadar.</dd></div>
+                  <div><dt>Otot polos</dt><dd>Dinding lambung, usus, dan pembuluh darah; tanpa garis lurik; bekerja tanpa disadari.</dd></div>
+                  <div><dt>Otot jantung</dt><dd>Dinding jantung; bergaris lurik, bercabang, bekerja tanpa disadari.</dd></div>
+                </dl>
+                <p class="label sub-label">Bekerja berpasangan</p>
+                <p class="body-sm">Otot hanya bisa menarik, tidak mendorong. Saat lengan menekuk, biceps berkontraksi dan triceps rileks. Saat lengan meluruskan, perannya bertukar. Pasangan seperti ini disebut otot antagonis.</p>
+                <p class="note">Hubungan dengan saraf: neuron motorik melepaskan zat kimia asetilkolin pada sambungan saraf–otot. Tanpa sinyal ini, otot rangka tidak berkontraksi.</p>
+              </div>
+              <figure class="plate topic-fig fig-tall">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Muscles_anterior_labeled.png?width=900" alt="Otot-otot rangka tubuh manusia tampak depan dengan label" loading="lazy">
+                <figcaption><span>Gambar</span> Otot rangka tampak depan. <em>Mikael Häggström, dari Gray's Anatomy, domain publik.</em></figcaption>
+              </figure>
+            </div>
+          </article>
+
+        </div>
+
+        <nav class="stage-nav" aria-label="Pindah materi">
+          <a class="step step-prev" id="prevLink" href="#beranda"><span class="label">Sebelumnya</span><strong id="prevTitle">Beranda</strong></a>
+          <span class="stage-count" id="stageCount" aria-hidden="true"></span>
+          <a class="step step-next" id="nextLink" href="#materi/neuron"><span class="label">Berikutnya</span><strong id="nextTitle">Neuron</strong></a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ============ KUIS ============ -->
+    <section class="view quiz" id="view-kuis" aria-label="Kuis">
+      <div class="quiz-intro">
+        <p class="label">Kuis singkat</p>
+        <h2>Lima soal, satu kali duduk.</h2>
+        <p>Soal mencakup otak, neuron, refleks, sendi, dan otot. Setiap jawaban langsung diberi penjelasan.</p>
+        <a class="btn btn-line" href="#materi">Baca materi dulu</a>
+      </div>
+
+      <div class="quiz-sheet" id="quizSheet">
+        <div class="quiz-start" id="quizStart">
+          <p class="label">5 pertanyaan · pilihan ganda</p>
+          <h3>Siap menguji pemahamanmu?</h3>
+          <p>Pilih satu jawaban paling tepat untuk tiap soal. Skor ditampilkan di akhir.</p>
+          <button class="btn btn-solid" id="startQuiz" type="button">Mulai kuis</button>
+        </div>
+
+        <div class="quiz-live hidden" id="quizLive">
+          <div class="quiz-bar">
+            <span class="label" id="questionCount">Soal 1 dari 5</span>
+            <span class="label" id="scoreLabel">Skor 0</span>
+          </div>
+          <div class="meter" aria-hidden="true"><div class="meter-fill" id="meterFill"></div></div>
+          <h3 id="questionText"></h3>
+          <div class="options" id="answerList"></div>
+          <p class="feedback hidden" id="feedback" role="status" aria-live="polite"></p>
+          <button class="btn btn-solid hidden" id="nextQuestion" type="button">Soal berikutnya</button>
+        </div>
+
+        <div class="quiz-end hidden" id="quizResult">
+          <p class="label">Hasil kuis</p>
+          <p class="big-score"><strong id="finalScore">0</strong><span>dari 5 benar</span></p>
+          <h3 id="resultTitle"></h3>
+          <p id="resultMessage"></p>
+          <div class="home-actions">
+            <button class="btn btn-solid" id="retryQuiz" type="button">Ulangi kuis</button>
+            <a class="btn btn-line" href="#materi">Buka materi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <a class="brand footer-brand" href="#beranda"><span class="brand-mark">N<span>.</span></span><span>neuron<span class="brand-light">motion</span></span></a>
-    <p>Arki Ahmad Fabian</p>
-    <span class="footer-copy">© 2026 NEURON MOTION · IPAS</span>
-  </footer>
   <script src="script.js"></script>
 </body>
 </html>
